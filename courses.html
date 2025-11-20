@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ismailia Careers - Course Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111418] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="flex h-full min-h-screen">
+<!-- SideNavBar -->
+<aside class="flex h-screen min-h-full w-64 flex-col justify-between border-r border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-background-dark">
+<div class="flex flex-col gap-8">
+<a class="flex items-center gap-3 px-3 hover:opacity-90" href="index.html">
+<div class="flex size-10 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h1 class="text-base font-bold leading-normal text-[#111418] dark:text-white">Ismailia Careers</h1>
+</a>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="index.html">
+<span class="material-symbols-outlined text-base">dashboard</span>
+<p class="text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg bg-primary/20 px-3 py-2 text-primary" href="courses.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">book</span>
+<p class="text-sm font-bold leading-normal">My Courses</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="search.html#courses">
+<span class="material-symbols-outlined">add_circle</span>
+<p class="text-sm font-medium leading-normal">Post New Course</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="dashboard.html">
+<span class="material-symbols-outlined">bar_chart</span>
+<p class="text-sm font-medium leading-normal">Analytics</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="login.html#account">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-sm font-medium leading-normal">Settings</p>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-1 border-t border-gray-200 pt-4 dark:border-gray-800">
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800" href="login.html#login">
+<span class="material-symbols-outlined">logout</span>
+<p class="text-sm font-medium leading-normal">Log Out</p>
+</a>
+</div>
+</aside>
+<!-- Main Content -->
+<div class="flex flex-1 flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 bg-white px-10 py-3 dark:border-gray-800 dark:bg-background-dark">
+<label class="relative flex h-10 w-full max-w-sm items-center">
+<span class="material-symbols-outlined absolute left-3 text-gray-500 dark:text-gray-400">search</span>
+<input class="form-input h-full w-full rounded-lg border-gray-300 bg-background-light pl-10 text-sm text-[#111418] placeholder:text-gray-500 focus:border-primary focus:ring-primary dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:placeholder:text-gray-400 dark:focus:border-primary" placeholder="Search courses, participants..." type="text"/>
+</label>
+<div class="flex flex-1 items-center justify-end gap-4">
+<div class="flex gap-2">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-base">notifications</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-base">help</span>
+</button>
+</div>
+<div class="aspect-square size-10 rounded-full bg-cover bg-center bg-no-repeat" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJFQaAGqRr9ZFjkmPb-teEtT1p6hJoQEEMfAkVWh7Wqu_shwyWhmDzsq8SuKVWCxgKBMImeX-0DNc7O7TqO9uxfnKLEPygWofg--oUOoFZi6sHwwjtOTkVmv3jQZoT9C1aLqtJLj5W1C_zQuqCWUzxWGC4ZEN38cf-5l86H0ZrF_QVL7x7H4egJOnWlv41WLQuxw9AunK6i2UlN6ceQd9o0h0Mjn7_8m8UzRCqUwfjDyfS5ItUBEBrMdqNqLStE6nDYdDZkJ6OKTw");'></div>
+</div>
+</header>
+<!-- Page Content -->
+<main class="flex-1 overflow-y-auto p-10">
+<div class="mx-auto max-w-7xl">
+<!-- PageHeading -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-3xl font-bold tracking-tight text-[#111418] dark:text-white">Course Management</p>
+<p class="text-base font-normal text-gray-500 dark:text-gray-400">Oversee, edit, and manage all your courses.</p>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-base">add</span>
+<span class="truncate">Post New Course</span>
+</button>
+</div>
+<!-- Tabs -->
+<div class="mt-8 pb-3">
+<div class="flex gap-8 border-b border-gray-200 dark:border-gray-700">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold text-primary">Active Courses</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-[13px] pt-4 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+<p class="text-sm font-bold">Drafts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-[13px] pt-4 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+<p class="text-sm font-bold">Archived</p>
+</a>
+</div>
+</div>
+<!-- Cards Grid -->
+<div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
+<div class="flex flex-col gap-4">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center bg-no-repeat" data-alt="Abstract image for a digital marketing course" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBY1u91kcr9EgE9HV_LUiZRuL9oGhbYrisBJv28v-2qMDzVY6JRSjoM-xJVDhczfc_Jhf8nZXrtxNmG-AbEbyJSRJO_tFNdi2SkVe6y3NfKLPOBhSBnDO5zs57bkUCUOakiNWXK9wDhl2fr1-zl6mBjFHw4dePNEOlOOl-HFt7QRf06K8FJZkJNaQJOoj_dnEfTHX53s7nyIExUVlKDOFlujWLo3plG2JM5r-FLjD4n9PqTnHcBEas4RM0fOWcaM5dAVy8qBxO2l60");'></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="inline-block h-2 w-2 rounded-full bg-green-500"></span>
+<p class="text-sm font-medium text-green-600 dark:text-green-400">Active</p>
+</div>
+<p class="text-base font-bold text-[#111418] dark:text-white">Advanced Digital Marketing</p>
+<p class="text-sm font-normal text-gray-500 dark:text-gray-400">Enrolled: 25/40</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+<span class="truncate">Edit</span>
+</button>
+<button class="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+<span class="truncate">View</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
+<div class="flex flex-col gap-4">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center bg-no-repeat" data-alt="Abstract image for a project management course" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEvXOgUCbeal5HzkyZXD5DphtR7tiX6v9IDVmCmEXHT2sSxkONiHHKGxYO0wxZDEvHNr4-NT21M6ThtQkbzMYyNGD8hAYkgVO3oG_TfgCjP0uhST1FvOTEH746khWSNw8tisTSe4Ayzkxe-Wd1vAfJXJ6trT0YyXkxIG5B6g3jpsOquGjGs8ygI4G9EBREuU8FmoAj302L8lWBIwhHTuacIyz5CFAXvJqca7h51s5S6gDdcD6pzJDe6pUFIWNM_l-rLvw9J14WrvE");'></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="inline-block h-2 w-2 rounded-full bg-green-500"></span>
+<p class="text-sm font-medium text-green-600 dark:text-green-400">Active</p>
+</div>
+<p class="text-base font-bold text-[#111418] dark:text-white">Project Management Fundamentals</p>
+<p class="text-sm font-normal text-gray-500 dark:text-gray-400">Enrolled: 38/40</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+<span class="truncate">Edit</span>
+</button>
+<button class="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+<span class="truncate">View</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg dark:border-gray-800 dark:bg-gray-900">
+<div class="flex flex-col gap-4">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center bg-no-repeat" data-alt="Abstract image for a graphic design course" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDolu8AdDFqpEjfiv6x9oFkrJV9lZQp3TEmyYy7xhxTux32LFpj9zsSkxIijWNVx6ditXOQluD1v9IZxwnp_zCaXITZofEgPBS369qtfGmZw-iVGSMhysR2Cs8Rlfb6Pt5wKb8UIT4p34o8nAbI-YNypk8BhEoABwmsnx-t_x4GBGiT_ZLfVNgBWk1IXiE8TZZ21LdI3UA-cNrutK_-N7P0YyDkuAaMwdvgWSXlha8Lsy2nmhxxNtwGlL6_0KwCcgx4zz4LNwWEIvc");'></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+<p class="text-sm font-medium text-red-600 dark:text-red-400">Inactive</p>
+</div>
+<p class="text-base font-bold text-[#111418] dark:text-white">Graphic Design for Beginners</p>
+<p class="text-sm font-normal text-gray-500 dark:text-gray-400">Enrolled: 12/30</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+<span class="truncate">Edit</span>
+</button>
+<button class="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+<span class="truncate">View</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>

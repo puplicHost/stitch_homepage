@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ismailia Careers Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;70axle=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "success": "#28A745",
+                        "warning": "#FFC107",
+                        "danger": "#DC3545",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full">
+<!-- Left Sidebar -->
+<aside class="flex h-screen w-64 flex-col border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark fixed">
+<div class="flex h-full flex-col justify-between p-4">
+<div class="flex flex-col gap-8">
+<a class="flex items-center gap-3 px-3 hover:opacity-90" href="index.html">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Ismailia Careers company logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQ1TfcBwxVKpWVbOKO_EQx8QzUnH937CvdQtqUl4Dz_xZdC_hfsy9D--AypQttjoibHGkcZkvjdFCunOhtjHA3A-AFHh64LtxJ5e-uL4edlLW7rCEOogj0ttRVMJkhLLv8jGXr1wrsOX0sB2gBSO0GmRpQSRFE6c4Igfc6PpAV5Me7IlhEcPG6FPw1glbHTfHuMC_IMdI2aRA-G0cR1YO0PdNm7Xq9ZKybxcfKREAPAIYcA7PxYQcW956oZLNugUCcvla4pmLFFeQ");'></div>
+<div class="flex flex-col">
+<h1 class="text-slate-900 dark:text-white text-base font-bold leading-normal">Ismailia Careers</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Job Seeker Portal</p>
+</div>
+</a>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary dark:bg-primary/20" href="jops.html">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-bold leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300" href="search.html#jobs">
+<span class="material-symbols-outlined">work</span>
+<p class="text-sm font-medium leading-normal">My Applications</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300" href="search.html#courses">
+<span class="material-symbols-outlined">school</span>
+<p class="text-sm font-medium leading-normal">My Courses</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300" href="login.html#account">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-sm font-medium leading-normal">Profile Settings</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300" href="login.html#login">
+<span class="material-symbols-outlined">logout</span>
+<p class="text-sm font-medium leading-normal">Logout</p>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex flex-1 flex-col ml-64 mr-80 p-8">
+<header class="mb-8">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Welcome back, Ahmed!</h1>
+</header>
+<div class="flex flex-col gap-6">
+<div class="w-full">
+<div class="flex border-b border-slate-200 dark:border-slate-700 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Applied Jobs</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 pb-[13px] pt-4 hover:text-slate-700 dark:hover:text-slate-200" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Enrolled Courses</p>
+</a>
+</div>
+</div>
+<!-- Application Tracking Table -->
+<div class="w-full">
+<div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50">
+<table class="w-full">
+<thead>
+<tr class="bg-slate-50 dark:bg-slate-800/50">
+<th class="px-6 py-3 text-left text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Company</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Job Title</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Application Date</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Company A logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3tYEj7WJh4FE_oTGsVCAm4cUFUE6-LCk2dDxIRgM4_a5TL7b0Y9-nY9MCh194MnSGgtEPVQz5NM-QFmO7FromzlK4IK-_EHfoFTBNYuJbVKlJMFVZ2eJiM4GByDMP1HOuQBHgX9FnDTfMqo96B2qvq9kaRbxmEnXDicG1l7zt7B53uOWDmYD3MFIh2VDYKLbdw9NxwXVsJD36Ie9G__rmhO3n7KNahug0bLXa7tMztWFs0HucPZw7qQ25CDJjIbMhO0jPv7TjuLk");'></div>
+<span class="text-sm font-medium text-slate-900 dark:text-white">Innovatech</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-800 dark:text-slate-200">Frontend Developer</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500 dark:text-slate-400">2023-10-15</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-warning/20 text-yellow-800 dark:bg-warning/30 dark:text-yellow-200">Under Review</span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Company B logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPux7TD6gfmdcgphaiW_QjbdzoDcrIw2k-em2KcKcL3FcF7vX3Rl_RpBDBArlZ3TiJvMOXsixRKqIv-JN2u8XCK_uard7MQgzLQvUgUqDpm1SFPkckE3CtNG4ivr9bH8REUof5MulaqlCj-cj5QkNmrwfiJdh_ga-c4n7p6vb1SVgiYv1f4T6zUsZTMPuDtsLO54z4aVgqTHrpYAvoqpkf1fjnUjFWSaPAyQKpAufBi-C94c8pqKFJdOsLkx6G5QQuLrt34mZay9o");'></div>
+<span class="text-sm font-medium text-slate-900 dark:text-white">DataSolutions</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-800 dark:text-slate-200">UX/UI Designer</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500 dark:text-slate-400">2023-10-12</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-blue-800 dark:bg-primary/30 dark:text-blue-200">Interviewing</span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Company C logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbKCdgtAkpy0bJ10MBZ4OQmz1SIAlajbOzo4t9BAyGnE6FTuLQKjTYDas3ALi2o0HW2cxbqZvJgm-VyFbS0P95vqTCZXugpeMXSalp3X2325wOQZY4dc1DDkVk2240csnLav0vq4QQLP_4p5g3PGhEIA1Gr7K5u0A3NGo-dwqpydnySaDqY8LpLEJX_ttM6ZRI_JhmMYIUNoRjXkSh_oFBqipVEEVluXLPGzujDFQ28WgSdo3jUdttjp3pU3jdS4fl3Y_lmngEicc");'></div>
+<span class="text-sm font-medium text-slate-900 dark:text-white">NextGen PM</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-800 dark:text-slate-200">Project Manager</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500 dark:text-slate-400">2023-10-10</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-success/20 text-green-800 dark:bg-success/30 dark:text-green-200">Offer</span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Company D logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNY6j1_LQUNjCRkSAHYvws1lm94Jfy3VOs6iwNHoEKMN_AEMPxUvdEQqppProYoZ0js6sg1odiN3VNk8yUO7YEUmNvz4uAHtx6MwPiQk-jrPXd5IGb4E74F22MMiJxseGzFAt4sPG0nea3ytl6rrsnPUcQYYhKLw27-aaq-PIGdMnEht8BGrPATTccNRAC7qrLPcTT6TIbLrcfCkuX7sT4EQbqOYYvwdZkZxgVb6EH-0RtqkKr3oiY_-GS4r5JsQR8QFzxPvtzx6Y");'></div>
+<span class="text-sm font-medium text-slate-900 dark:text-white">CodeCrafters</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-800 dark:text-slate-200">Backend Engineer</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500 dark:text-slate-400">2023-10-08</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-danger/20 text-red-800 dark:bg-danger/30 dark:text-red-200">Rejected</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<!-- Right Profile Column -->
+<aside class="fixed right-0 top-0 h-screen w-80 bg-white dark:bg-background-dark border-l border-slate-200 dark:border-slate-800 p-6">
+<div class="flex flex-col items-center gap-8">
+<!-- Profile Header -->
+<div class="flex flex-col gap-4 items-center w-full">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32" data-alt="User avatar of Ahmed Hassan" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIuLppqD9FHAvcuMjyy7yIOVK8gICA__Z7ump62Kcex4_r2ktqm29HB5AaLxrfA1lIWOaVHgxyyE0gEy9yjHDosL26QWZULpaeLv9opPAsgPvXY4aYEchcErylCGAKP4TcQUfhn2nl84TqFf4U4qBZY4Agy_6HztRsDEzlgx-YFMDaswm2RIf_HlaN0lnqhHg_WpxqhGogN6-9LoK0aK5EyuCb8fR0fLwHXLpPiZO6cjuNLnQkws3hTB8XRj1t7CMH6C5bq4P1b3o");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Ahmed Hassan</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Software Engineer</p>
+</div>
+<div class="flex w-full gap-3">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 hover:bg-slate-200 dark:hover:bg-slate-700">
+<span class="truncate">Edit Profile</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 hover:bg-primary/90">
+<span class="truncate">View Resume</span>
+</button>
+</div>
+</div>
+<!-- Profile Completion -->
+<div class="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 p-6 flex flex-col items-center gap-4">
+<div class="relative size-32">
+<svg class="size-full" height="36" viewbox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="stroke-current text-slate-200 dark:text-slate-700" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-current text-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="25" stroke-linecap="round" stroke-width="3" transform="rotate(-90 18 18)"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-3xl font-bold text-slate-900 dark:text-white">75%</span>
+</div>
+</div>
+<div class="text-center">
+<p class="text-lg font-semibold text-slate-900 dark:text-white">Profile Completion</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Complete your profile to stand out to recruiters.</p>
+</div>
+<button class="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+<span>Complete Profile</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+</body></html>

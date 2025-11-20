@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ismailia Careers - Find Your Next Opportunity</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-20 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 sm:px-6 lg:px-10 py-3 bg-white dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Ismailia Careers</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-primary" href="#jobs">Jobs</a>
+<a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#courses">Courses</a>
+<a class="text-sm font-medium leading-normal text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="dashboard.html">Companies</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em]" href="login.html#login">
+<span class="truncate">Login</span>
+</a>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]" href="login.html#register">
+<span class="truncate">Sign Up</span>
+</a>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Left Column: Filters -->
+<aside class="w-full lg:w-1/4 lg:max-w-xs shrink-0">
+<div class="sticky top-24 space-y-6">
+<div class="bg-white dark:bg-background-dark p-4 rounded-xl border border-gray-200 dark:border-gray-700">
+<div class="flex border-b border-gray-200 dark:border-gray-700 mb-4">
+<button class="flex-1 py-2 text-sm font-semibold text-primary border-b-2 border-primary">Filter Jobs</button>
+<button class="flex-1 py-2 text-sm font-semibold text-gray-500 dark:text-gray-400">Filter Courses</button>
+</div>
+<div class="space-y-6">
+<!-- Location Filter -->
+<div>
+<h3 class="font-bold text-gray-800 dark:text-gray-200 mb-3">Location</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input checked="" class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Ismailia City</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Fayed</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>El Qantara</span></label>
+</div>
+</div>
+<!-- Job Type Filter -->
+<div>
+<h3 class="font-bold text-gray-800 dark:text-gray-200 mb-3">Job Type</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input checked="" class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Full-time</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Part-time</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Remote</span></label>
+</div>
+</div>
+<!-- Experience Level Filter -->
+<div>
+<h3 class="font-bold text-gray-800 dark:text-gray-200 mb-3">Experience Level</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Internship</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Entry-level</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input checked="" class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Mid-level</span></label>
+<label class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"><input class="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary dark:bg-gray-700" type="checkbox"/><span>Senior-level</span></label>
+</div>
+</div>
+<!-- Salary Range Slider -->
+<div>
+<h3 class="font-bold text-gray-800 dark:text-gray-200 mb-3">Salary Range</h3>
+<input class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer" max="100" min="0" type="range"/>
+<div class="flex justify-between text-xs text-gray-500 dark:text-gray-400 mt-1">
+<span>EGP 5k</span>
+<span>EGP 50k+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Apply Filters</span>
+</button>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Reset</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Right Column: Results -->
+<div class="w-full lg:w-3/4 flex flex-col gap-6">
+<!-- Page Heading -->
+<p class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Find Your Next Opportunity in Ismailia</p>
+<!-- Search Bar -->
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark">
+<div class="text-gray-500 dark:text-gray-400 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#111418] dark:text-gray-200 focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search by keyword (e.g., 'Software Engineer')" value=""/>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-r-lg m-1 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Search</span>
+</button>
+</div>
+</label>
+<!-- Active Filters Chips -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary/20 pl-3 pr-2 text-primary">
+<p class="text-sm font-medium leading-normal">Ismailia City</p>
+<button class="text-primary rounded-full hover:bg-primary/20"><span class="material-symbols-outlined text-base">close</span></button>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary/20 pl-3 pr-2 text-primary">
+<p class="text-sm font-medium leading-normal">Full-time</p>
+<button class="text-primary rounded-full hover:bg-primary/20"><span class="material-symbols-outlined text-base">close</span></button>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-1 rounded-full bg-primary/20 pl-3 pr-2 text-primary">
+<p class="text-sm font-medium leading-normal">Mid-level</p>
+<button class="text-primary rounded-full hover:bg-primary/20"><span class="material-symbols-outlined text-base">close</span></button>
+</div>
+<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary underline" href="#">Clear all</a>
+</div>
+<!-- Results Header -->
+<div class="flex flex-wrap justify-between items-center gap-4">
+<h2 class="text-gray-800 dark:text-gray-200 text-lg font-bold">Showing 72 results</h2>
+<div class="flex items-center gap-2">
+<span class="text-sm text-gray-600 dark:text-gray-400">Sort by:</span>
+<select class="form-select rounded-lg border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm focus:border-primary focus:ring-primary">
+<option>Relevance</option>
+<option>Date Posted</option>
+<option>Salary (High to Low)</option>
+</select>
+</div>
+</div>
+<!-- Job Listings -->
+<div class="space-y-4" id="jobs">
+<!-- Job Card 1 -->
+<div class="bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex flex-col sm:flex-row gap-4 items-start hover:shadow-lg hover:border-primary transition-all duration-200">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" data-alt="Company Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD705AP60PbS-6U4ZgrxAU0vxFMqEEddBC0EMW7qEfrbgJ0MzadGfO_8Q0-9ZaogHj8773rX7kwIUaNlEWS5zwgX5_jI35GSCj_4Pmov6Du4kRSUKl37hxkdTFKvrFD9nFTwE61kBTCYxNqU9yGaiL9ITZzSNf1NVhekcQVr0XeYRmhZw9Mt87OTRt2g3d28nsC_UGkEn49utFcXsa5CaL943fXeVGMCuhjdArsZjEZXypmaC6JvQFWGqB7hmeKcNJC1hdo28Yk4UA");'></div>
+<div class="flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Senior Frontend Developer</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">TechCorp Solutions</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Ismailia City, Ismailia</p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="text-xs font-semibold px-2 py-1 bg-primary/10 text-primary rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">Senior-level</span>
+<span class="text-xs font-semibold px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">Engineering</span>
+</div>
+</div>
+<div class="w-full sm:w-auto flex flex-col items-start sm:items-end gap-2 mt-2 sm:mt-0">
+<span class="text-sm text-gray-500 dark:text-gray-400">Posted 2 days ago</span>
+<a class="w-full sm:w-auto flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]" href="jops.html">
+<span class="truncate">View &amp; Apply</span>
+</a>
+</div>
+</div>
+<!-- Job Card 2 -->
+<div class="bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex flex-col sm:flex-row gap-4 items-start hover:shadow-lg hover:border-primary transition-all duration-200">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" data-alt="Company Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSXJ4UzkLs9FAnrMOmzuluWjJEWJm7kOnjyutF9S_7yPtdO1zYAFTHbjfbm-0QOMCevOZ5ybGsGP84Ph1m9lEsHeWPXqULwDpCwqYbxXNsFCUf1mjXrMCy_R6ihRIUs5fTtC9tE2zGkPQsvPh4Ki-lypBvVQ7G4tCcH-CbpzJr6XqZMIu-3vM-g46QisJcZ_cbWg58CswfW5sTw2HzKuH6ge4ue_bwu7up3QZf4mt5TKfQxs6MH1bWQe-XX5zQNIhV8krckZXusXI");'></div>
+<div class="flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Logistics Coordinator</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">Suez Canal Authority</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Ismailia City, Ismailia</p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="text-xs font-semibold px-2 py-1 bg-primary/10 text-primary rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">Mid-level</span>
+<span class="text-xs font-semibold px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">Logistics</span>
+</div>
+</div>
+<div class="w-full sm:w-auto flex flex-col items-start sm:items-end gap-2 mt-2 sm:mt-0">
+<span class="text-sm text-gray-500 dark:text-gray-400">Posted 5 days ago</span>
+<a class="w-full sm:w-auto flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]" href="jops.html">
+<span class="truncate">View &amp; Apply</span>
+</a>
+</div>
+</div>
+<!-- Course Card 1 -->
+<div class="bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex flex-col sm:flex-row gap-4 items-start hover:shadow-lg hover:border-primary transition-all duration-200" id="courses">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" data-alt="Course Provider Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdqmmUzCrPLp1oQP4l942EfTa7nuvHtYSIe4K2-OE8OgC7TF1O_6BLJsDRa9lNpbjI3ETqMD6rBwKds2GPtf6U1zSgMSt5V4vPN1Bopp4vM9wtScM6rVOnHUTHSQh1UaB2egbpap1m8Q0ffn8p97iYtHv5VElUbtFf0TEyf9h946frvpTkEKWsdkOXI42CAuWVTLleT4MDnJ-cIOcGVD_ga709nb0CSlQ1GXc0TQ6HYvBb_yLHkHU1uga43NIv6FuZblyJsSjQtUE");'></div>
+<div class="flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Digital Marketing Fundamentals</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300">Ismailia LearnHub</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Online</p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="text-xs font-semibold px-2 py-1 bg-amber-500/10 text-amber-600 rounded-full">Course</span>
+<span class="text-xs font-semibold px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">6 Weeks</span>
+<span class="text-xs font-semibold px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">Beginner</span>
+</div>
+</div>
+<div class="w-full sm:w-auto flex flex-col items-start sm:items-end gap-2 mt-2 sm:mt-0">
+<span class="text-lg font-bold text-gray-700 dark:text-gray-200">EGP 1,200</span>
+<a class="w-full sm:w-auto flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em]" href="courses.html">
+<span class="truncate">Learn &amp; Enroll</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<nav aria-label="Pagination" class="flex items-center justify-between pt-4">
+<div class="hidden sm:block">
+<p class="text-sm text-gray-700 dark:text-gray-300">
+                Showing
+                <span class="font-medium">1</span>
+                to
+                <span class="font-medium">10</span>
+                of
+                <span class="font-medium">72</span>
+                results
+              </p>
+</div>
+<div class="flex flex-1 justify-between sm:justify-end">
+<a class="relative inline-flex items-center rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700" href="#">Previous</a>
+<a class="relative ml-3 inline-flex items-center rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700" href="#">Next</a>
+</div>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</body></html>
